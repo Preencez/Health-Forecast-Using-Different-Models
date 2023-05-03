@@ -1,5 +1,5 @@
 
-#importing Libraries 
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,49 +7,49 @@ import matplotlib.pyplot as plt
 
 # In[2]:
 
-#importing dataset
+
 df=pd.read_csv(r"C:\Users\asus\Data_Analytics\heart_failure_clinical_records_dataset.csv")
 
 
 # In[3]:
 
-#checking the dataset
+
 df
 
 
 # In[4]:
 
-#checking unique values in the dataset
+
 df.nunique()
 
 
 # In[5]:
 
-#checking the info of the statset
+
 df.info()
 
 
 # In[6]:
 
-#checking for null values
+
 df.isnull().any()
 
 
 # In[7]:
-#checking the shape of the dataset
+
 
 df.shape
 
 
 # In[8]:
 
-#checking for duplicate values
+
 df.duplicated().sum()
 
 
 # In[9]:
 
-#checking the description of the dataset
+
 df.describe(include="all").transpose()
 
 
